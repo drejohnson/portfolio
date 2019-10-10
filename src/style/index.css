@@ -46,12 +46,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 :--heading {
 	font-weight: bold;
+  margin-block: 0;
+}
+
+p {
   margin-block: 0;
 }
 
