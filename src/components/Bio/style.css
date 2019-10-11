@@ -4,6 +4,6 @@
   }
 
   & p {
-    margin: var(--spacing-lg) 0;
+    margin: calc(var(--spacing-lg) *2) 0;
   }
 }

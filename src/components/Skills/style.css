@@ -4,7 +4,7 @@
   }
   & ul {
     padding: 0;
-    margin: var(--spacing-lg) 0;
+    margin: calc(var(--spacing-lg) *2) 0;
 
     & li {
       color: var(--mint-cream);

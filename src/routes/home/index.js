@@ -4,6 +4,7 @@ import style from './style'
 import Intro from '../../components/Intro'
 import Bio from '../../components/Bio'
 import Skills from '../../components/Skills'
+import Projects from '../../components/Projects'
 
 const Home = () => (
   <div class={style.home}>
@@ -12,6 +13,7 @@ const Home = () => (
       <Bio />
       <Skills />
     </div>
+    <Projects />
   </div>
 )
 
