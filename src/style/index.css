@@ -5,7 +5,16 @@
 
 :root {
   --bg-color: #222222;
-	--white: #fefefb;
+  --mint-cream: #F7FFF7;
+  --maize: #FFE66D;
+  --english-green: #1A535C;
+  --medium-turquiose: #4ECDC4;
+  --pastel-red: #FF6B6B;
+  
+  --body-font: 'Lato', sans-serif;
+  --heading-font: 'Oswald', sans-serif;
+
+  --header-height: 4rem;
 	
 	--spacing-sm: 0.25rem;
   --spacing-md: 0.5rem;
@@ -47,8 +56,14 @@ body {
 }
 
 :--heading {
-	font-weight: bold;
-  margin-block: 0;
+	margin: 0 0 0.5rem 0;
+	font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 p {
@@ -97,9 +112,6 @@ button,
 }
 
 #app {
-	height: 100%;
-
-	@media (--md-viewport) {
-		height: 100vh;
-	}
+	position: relative;
+	min-height: 100vh;
 }

@@ -1,0 +1,43 @@
+.intro {
+  position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  z-index: 3;
+  
+  & .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+		align-items: center;
+		height: 80vh;
+    margin-bottom: var(--spacing-lg);
+
+    @media (--lg-viewport) { 
+      flex-direction: row;
+    }
+
+    @media (--md-viewport) { 
+      height: 100vh;
+    }
+    
+    & img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      @media (--lg-viewport) { 
+        object-position: top;
+      }
+    }
+
+    & .info {
+      padding: calc(var(--spacing-lg) * 2);
+      
+      & h1 span {
+        color: var(--medium-turquiose);
+      }
+      & p {}
+    }
+  }
+}
