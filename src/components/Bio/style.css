@@ -1,0 +1,9 @@
+.bio {
+  @media (--lg-viewport) { 
+    width: 48%;
+  }
+
+  & p {
+    margin: var(--spacing-lg) 0;
+  }
+}

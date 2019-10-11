@@ -2,7 +2,7 @@
   position: relative;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	height: calc(100vh - var(--header-height));
   z-index: 3;
   
   & .content {
@@ -11,7 +11,6 @@
     justify-content: space-around;
 		align-items: center;
 		height: 80vh;
-    margin-bottom: var(--spacing-lg);
 
     @media (--lg-viewport) { 
       flex-direction: row;
@@ -35,9 +34,18 @@
       padding: calc(var(--spacing-lg) * 2);
       
       & h1 span {
-        color: var(--medium-turquiose);
+        color: var(--pastel-red);
       }
       & p {}
+
+      & .contact {
+        display: flex;
+        flex-direction: column;
+        & a {
+          color: var(--medium-turquiose);
+          text-decoration: none;
+        }
+      }
     }
   }
 }

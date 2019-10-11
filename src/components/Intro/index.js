@@ -12,7 +12,16 @@ const Intro = () => (
         <h1>
           DeAndre Johnson - <span>Fullstack Developer</span>
         </h1>
-        <p>Crushing Lambda School to become rockstar developer</p>
+        <div class={style.contact}>
+          <span class="email">
+            <a href="mailto:dre@phreshr.com">dre@phreshr.com</a>
+          </span>
+          <span class="resume">
+            <a href="http://drejohnson.github.io/resume">
+              http://drejohnson.github.io/resume
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   </section>

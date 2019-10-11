@@ -4,7 +4,7 @@ import style from './style'
 
 export default function ActiveLink(props) {
   const [isActive] = useRoute(props.to)
-  const s = isActive ? style.active : ''
+  const s = isActive ? `${style.link} ${style.active}` : style.link
 
   return (
     <Link class={s} {...props}>
