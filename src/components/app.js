@@ -9,7 +9,7 @@ import Posts from '../routes/Posts'
 
 const App = () => (
   <div id="app">
-    <Header />
+    {/* <Header /> */}
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/posts" component={Posts} />
