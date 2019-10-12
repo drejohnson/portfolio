@@ -1,4 +1,5 @@
 .projects {
+  background: var(--mint-cream);
   padding: calc(var(--spacing-lg) * 3) calc(var(--spacing-lg) * 2);
 
   & ul {
@@ -12,7 +13,7 @@
         width: 100%;
         height: 250px;
         object-fit: cover;
-        object-position: center;
+        object-position: 0 0;
         transform: scale(1);
         transition: transform 0.5s ease-in-out;
 
