@@ -1,13 +1,15 @@
 import { h } from 'preact'
+import { Linkedin, GitHub } from 'react-feather'
 import style from './style'
+
+import me from '../../../assets/images/me2.jpg'
 
 const Intro = () => (
   <section class={style.intro}>
     <div class={style.content}>
-      <img
-        src="https://aboutme.imgix.net/background/deandre.johnson_1339005834_16.jpg?q=40&dpr=2&auto=format&fit=max&w=1200&h=820.3125"
-        alt="Avatar"
-      />
+      <div class={style.avatar}>
+        <img src={me} alt="Avatar" />
+      </div>
       <div class={style.info}>
         <h1>
           DeAndre Johnson - <span>Fullstack Developer</span>
@@ -21,6 +23,15 @@ const Intro = () => (
               http://drejohnson.github.io/resume
             </a>
           </span>
+        </div>
+        {/* could be components */}
+        <div class={style.social}>
+          <a href="https://www.linkedin.com/in/deandrejohnson/">
+            <Linkedin />
+          </a>
+          <a href="https://github.com/drejohnson">
+            <GitHub />
+          </a>
         </div>
       </div>
     </div>
