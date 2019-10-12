@@ -1,0 +1,20 @@
+.skills {
+  @media (--lg-viewport) { 
+    width: 48%;
+  }
+  & ul {
+    padding: 0;
+    margin: calc(var(--spacing-lg) *2) 0;
+
+    & li {
+      color: var(--mint-cream);
+      font-weight: 500;
+      padding: var(--spacing-sm);	
+      border-bottom: 1px solid var(--mint-cream)
+    }
+
+    & li:first-child {
+      border-top: 1px solid var(--mint-cream)
+    }
+  }
+}

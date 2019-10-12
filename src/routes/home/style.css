@@ -1,5 +1,18 @@
 .home {
-	padding: 56px 20px;
+	/* padding: var(--header-height) 0; */
 	min-height: 100%;
 	width: 100%;
+
+	& .middleContent {
+		display: flex;
+		flex-direction: column;
+		color: var(--mint-cream);
+		background-color: var(--english-green);
+		padding: calc(var(--spacing-lg) * 3) calc(var(--spacing-lg) * 2); 
+
+		@media (--lg-viewport) { 
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
 }

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "preact-app",
+  "name": "deandre-johnson-portfolio",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,6 +10,7 @@
     "build": "preact build",
     "serve": "preact build && serve build --single",
     "dev": "preact watch",
+    "deploy:now": "now --prod",
     "lint": "eslint src",
     "test": "jest"
   },
@@ -24,17 +25,19 @@
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
     "per-env": "^1.0.2",
+    "postcss-preset-env": "^6.7.0",
     "preact-cli": "^3.0.0-rc.5",
     "preact-render-spy": "^1.3.0",
     "prettier": "^1.18.2",
-    "serve": "^11.2.0"
+    "serve": "^11.2.0",
+    "stylelint-config-recommended": "^3.0.0"
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "postcss-preset-env": "^6.7.0",
     "preact": "^10.0.0",
     "preact-render-to-string": "^5.0.6",
     "preact-router": "^3.0.1",
+    "react-feather": "^2.0.3",
     "wouter-preact": "^2.2.1"
   },
   "jest": {
