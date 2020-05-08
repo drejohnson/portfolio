@@ -1,9 +1,0 @@
-.bio {
-  @media (--lg-viewport) { 
-    width: 48%;
-  }
-
-  & p {
-    margin: calc(var(--spacing-lg) *2) 0;
-  }
-}
