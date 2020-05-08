@@ -5,7 +5,7 @@
 <style>
   .project {
     background: var(--background-secondary);
-    min-height: 400px;
+    min-height: 450px;
     margin-bottom: 1rem;
     padding: 1rem;
   }
@@ -18,7 +18,7 @@
     .project-description,
     .project-role,
     .project-link {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
 
     .project-tag {
