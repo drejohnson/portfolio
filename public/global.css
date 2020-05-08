@@ -1,0 +1,83 @@
+:root {
+  --body-background: #1a1a1a;
+  --background-secondary: #2b2b2b;
+  --body-text: #e3e3e3;
+  --accent: #b8df1c;
+  --link: #49aae0;
+
+  --darcula-keyword: #d6912b;
+  --darcula-comment: #58984e;
+  --darcula-comment-dark: #3f7137;
+  --darcula-const: #d474cb;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: var(--body-background);
+  color: var(--body-text);
+  transition: background 0.3s ease-in;
+}
+
+.imports {
+  margin-bottom: 1em;
+}
+
+.keyword {
+  color: var(--darcula-keyword);
+}
+
+.comment {
+  color: var(--darcula-comment);
+}
+
+.const {
+  color: var(--darcula-const);
+  font-style: italic;
+}
+
+.static-fun {
+  font-style: italic;
+}
+
+.tab-1 {
+  margin-left: 1.1em;
+}
