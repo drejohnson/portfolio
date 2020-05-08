@@ -101,7 +101,6 @@
         <span class="accent">
           full stack developer currently living in Shanghai, China
         </span>
-        .
       </p>
     </div>
     <div class="about-me">
@@ -109,12 +108,10 @@
       <div>
         Spent a couple of years working as a self taught
         <span class="accent">front end developer</span>
-        .
       </div>
       <div>
         I've Built websites for various companies using
         <span class="accent">WordPress, AngularJS and React</span>
-        .
       </div>
       <div>
         My preferred toolkit for building front end applications include
@@ -124,7 +121,7 @@
         I love the challenges that comes with being a software engineer. The
         Problem solving and creative collaboration it takes to build unique and
         useful applictions is what drives me to constantly learn and grow as a
-        developer.
+        developer
       </div>
     </div>
 
