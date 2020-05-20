@@ -1,4 +1,5 @@
 <script>
+  import { fade } from 'svelte/transition';
   import { viewState, PROJECTS_PAGE_STATE } from '../stores/view-store';
   import Technology from '../components/Technology.svelte';
   import Footer from '../components/Footer.svelte';
@@ -15,27 +16,14 @@
         } */
 
     .title-content {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 700;
     }
 
     .sub-title-content {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       margin-bottom: 1rem;
-    }
-
-    .info-small-content {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-top: 2em;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .title-content {
-      font-size: 2.5rem;
-      font-weight: 700;
     }
 
     .info-small-content {
@@ -45,9 +33,22 @@
     }
   }
 
+  @media screen and (max-width: 900px) {
+    .title-content {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .info-small-content {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 2em;
+    }
+  }
+
   @media screen and (max-width: 500px) {
     .title-content {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 700;
     }
 
