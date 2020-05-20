@@ -5,14 +5,14 @@
 <style>
   .project {
     background: var(--background-secondary);
-    min-height: 450px;
+    min-height: 380px;
     margin-bottom: 1rem;
     padding: 1rem;
   }
 
   @media screen and (min-width: 900px) {
     .project-title {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
 
     .project-description,

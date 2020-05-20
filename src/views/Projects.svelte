@@ -41,27 +41,27 @@
 <style>
   @media screen and (min-width: 900px) {
     .header {
-      font-size: 4em;
+      font-size: 2.5em;
     }
 
     .link {
-      font-size: 2em;
+      font-size: 1.25em;
     }
   }
 
   @media screen and (max-width: 900px) {
     .header {
-      font-size: 3em;
+      font-size: 2em;
     }
 
     .link {
-      font-size: 1.5em;
+      font-size: 1.25em;
     }
   }
 
   @media screen and (max-width: 500px) {
     .header {
-      font-size: 1.6em;
+      font-size: 1.5em;
     }
 
     .link {
