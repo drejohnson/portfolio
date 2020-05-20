@@ -18,7 +18,7 @@
     .project-description,
     .project-role,
     .project-link {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .project-tag {
