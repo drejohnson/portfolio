@@ -92,19 +92,12 @@
     <div>Full Stack Developer</div>
   </div>
   <div class="info-small-content">
-    <div class="introduction">
-      <p>
-        My name is
-        <span class="accent">DeAndre Johnson</span>
-        <br />
-        I'm a
-        <span class="accent">
-          full stack developer currently living in Shanghai, China
-        </span>
-      </p>
-    </div>
     <div class="about-me">
       <div class="sub-title-content">A bit about me...</div>
+      <div>
+        I'm currently living in
+        <span class="accent">Shanghai, China</span>
+      </div>
       <div>
         Spent a couple of years working as a self taught
         <span class="accent">front end developer</span>
