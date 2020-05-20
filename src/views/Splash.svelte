@@ -8,7 +8,6 @@
   const code =
     '<div class="imports">' +
     '<div><span class="keyword">import</span> { <br/> <span class="const tab-1">loadProjects</span> <br />} <span class="keyword">from</span> "@drejohnson/portfolio"</div>' +
-    // "<div><span class=\"keyword\">import</span> dev.weazyexe.texts</div>" +
     '</div>' +
     '<div class="comment">// hey 👋🏾 what\'s up? welcome!</div>' +
     '<div class="comment">// go ahead and press run!</div>' +
