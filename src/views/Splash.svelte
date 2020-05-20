@@ -58,7 +58,7 @@
 <style>
   @media screen and (min-width: 900px) {
     .preview-content {
-      font-size: 2.5em;
+      font-size: 2.25em;
     }
   }
 
