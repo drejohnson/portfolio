@@ -58,24 +58,24 @@
 <style>
   @media screen and (min-width: 900px) {
     .preview-content {
-      font-size: 2.25em;
+      font-size: 2.25rem;
     }
   }
 
   @media screen and (max-width: 900px) {
     .preview-content {
-      font-size: 2em;
+      font-size: 2rem;
     }
   }
 
   @media screen and (max-width: 500px) {
     .preview-content {
-      font-size: 1.3em;
+      font-size: 1.25rem;
     }
   }
 
   .button {
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 </style>
 
