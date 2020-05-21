@@ -7,6 +7,7 @@
   .button {
     display: block;
     padding: 1rem 2rem;
+    font-size: 1.25rem;
     color: var(--body-text);
     border-style: none;
     background: var(--darcula-comment);
