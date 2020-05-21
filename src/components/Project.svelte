@@ -6,7 +6,6 @@
   .project {
     background: var(--background-secondary);
     min-height: 380px;
-    margin-bottom: 1rem;
     padding: 1rem;
   }
 
@@ -71,10 +70,7 @@
     <span style="color: indianred;">{project.role.toLowerCase()}</span>
   </div>
   <div class="project-link">
-    <a
-      class="project-link"
-      href={`https://github.com/${project.github_link}`}
-      target="_blank">
+    <a class="project-link" href={project.github_link} target="_blank">
       GitHub
     </a>
   </div>
