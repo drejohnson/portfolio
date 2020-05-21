@@ -53,13 +53,13 @@
     </div>
   {:else if currentViewState === PROJECTS_PAGE_STATE}
     <div
-      in:fly={{ y: -5000, duration: 2000 }}
+      in:fly={{ y: -8000, duration: 2000 }}
       out:fly={{ y: 400, duration: 500 }}>
       <Projects />
     </div>
   {:else if currentViewState === INFO_PAGE_STATE}
     <div
-      in:fly={{ y: -5000, duration: 2000 }}
+      in:fly={{ y: -10000, duration: 2000 }}
       out:fly={{ y: 400, duration: 500 }}>
       <Info />
     </div>
