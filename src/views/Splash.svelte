@@ -1,6 +1,6 @@
 <script>
-  import { sleep } from '../lib/utils';
   import { fade } from 'svelte/transition';
+  import { sleep } from '../lib/utils';
   import { viewState, INFO_PAGE_STATE } from '../stores/view-store';
   import Button from '../components/Button.svelte';
   import Loader from '../components/Loader.svelte';
