@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition';
   import { inAnimationParams, outAnimationParams } from '../lib/utils';
   import {
@@ -16,6 +17,8 @@
   viewState.subscribe(value => {
     currentViewState = value;
   });
+
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <style>

@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { viewState, PROJECTS_PAGE_STATE } from '../stores/view-store';
   import Technology from '../components/Technology.svelte';
@@ -7,6 +8,7 @@
   const onProjectsClick = () => {
     viewState.set(PROJECTS_PAGE_STATE);
   };
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <style>

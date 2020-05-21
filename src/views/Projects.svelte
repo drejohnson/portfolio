@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { query } from '@urql/svelte';
   import { viewState, INFO_PAGE_STATE } from '../stores/view-store';
   import Footer from '../components/Footer.svelte';
@@ -36,6 +37,8 @@
   $: projects = query({
     query: PROJECTS_QUERY,
   });
+
+  onMount(() => window.scrollTo(0, 0));
 </script>
 
 <style>
