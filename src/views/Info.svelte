@@ -115,8 +115,8 @@
       </div>
       <div>
         I love the challenges that comes with being a software engineer. The
-        Problem solving and creative collaboration it takes to build unique and
-        useful applictions is what drives me to constantly learn and grow as a
+        problem solving and creative collaboration it takes to build unique and
+        useful applications is what drives me to constantly learn and grow as a
         developer
       </div>
     </div>
