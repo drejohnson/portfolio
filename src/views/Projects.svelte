@@ -19,9 +19,7 @@
         github_link
         role
         color
-        Images {
-          id
-          name
+        images {
           link
         }
         project_tags {
@@ -85,9 +83,6 @@
     justify-items: center;
   }
 
-  .project-content {
-  }
-
   .link-content {
     margin-top: 3em;
   }
@@ -113,9 +108,7 @@
   {:else}
     <div class="projects-content">
       {#each $projects.data.project as project}
-        <div class="project-content">
-          <Project {project} />
-        </div>
+        <Project {project} />
       {/each}
     </div>
   {/if}
