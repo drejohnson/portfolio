@@ -98,10 +98,6 @@
     <div class="about-me">
       <div class="sub-title-content">A bit about me...</div>
       <div>
-        I'm currently living in
-        <span class="accent">Shanghai, China</span>
-      </div>
-      <div>
         Spent a couple of years working as a self taught
         <span class="accent">front end developer</span>
       </div>
