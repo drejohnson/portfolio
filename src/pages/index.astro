@@ -1,0 +1,410 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Steps from '~/components/widgets/Steps.astro';
+
+const metadata = {
+  title: 'BuiltByDre',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '#' },
+        { text: 'About', href: '#about' },
+        { text: 'Resume', href: '#resume' },
+        { text: 'Projects', href: '#projects' },
+        { text: 'Github', href: 'https://github.com/drejohnson' },
+      ]}
+      actions={[
+        {
+          text: 'Hire me',
+          href: 'mailto:dre@phreshr.com',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="Dre Johnson"
+    tagline="Full-stack Developer"
+    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: 'mailto:dre@phreshr.com' }]}
+  >
+    <Fragment slot="subtitle">
+      As a self-taught Full-Stack and Web3 Developer, I'm deeply passionate about blockchain and Web3. My experience
+      spans TypeScript, React.js, Next.js, Svelte, SvelteKit, Astro, Tailwind CSS, Solidity, and I'm eagerly exploring
+      Rust. My relentless commitment to learning and solving challenges ensures I stay at the forefront of technology,
+      making me a valuable asset for innovative projects in this evolving landscape.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:brand-github',
+        callToAction: {
+          target: '_blank',
+          text: 'Github',
+          href: 'https://github.com/drejohnson',
+        },
+      },
+      {
+        icon: 'tabler:brand-linkedin',
+        callToAction: {
+          target: '_blank',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/deandrejohnson/',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/me.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
+      <p>
+        Welcome to my digital realm! I'm a versatile Full-Stack and Web3 Developer, and I'm passionate about turning
+        innovative ideas into reality. I specialize in blockchain technology and Solidity, and I love working with
+        modern frameworks like Next.js, React, Svelte, and SvelteKit.
+      </p>
+      <br />
+      <p>
+        My expertise extends to backend programming with Node.js, Express, and Rust, and I'm skilled in crafting
+        responsive designs, managing databases, optimizing performance, and building REST APIs.
+      </p>
+      <br />
+      <p>
+        I thrive in remote teamwork, excel at problem-solving, and believe in clear communication. Let's work together
+        to bring your ideas to life and drive innovation and efficiency in every project! If you're curious to dive
+        deeper into my work, let's connect:
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Work experience"
+    items={[
+      {
+        title:
+          'Freelance Full-stack Developer <br /> <span class="font-normal">Freelance, Shanghai, CN - Remote</span> <br /> <span class="text-sm font-normal">2017 - Present</span>',
+        description: `<p class="mb-4 text-muted">Proficiently delivered numerous full-stack web applications tailored to diverse client requirements, showcasing expertise in JavaScript, TypeScript, and Rust, consistently earning accolades for exceptional user experiences.</p> <p class="mb-4 text-muted">Elevated user engagement by 30% across various client projects through adept utilization of Next.js, React, Svelte, and SvelteKit for front-end development.</p> <p class="mb-4 text-muted">Played a key role in designing and implementing secure and optimized Solidity smart contracts, ensuring robustness and efficiency in blockchain applications.</p> <p class="mb-4 text-muted">Spearheaded the development and implementation of robust server-side solutions, leveraging Node.js and Express, resulting in a 40% improvement in system reliability and enhanced scalability for client platforms.</p> <p class="mb-4 text-muted">Optimized SQL and PostgreSQL database management processes, resulting in heightened data integrity and a 35% reduction in query times.</p> <p class="mb-4 text-muted">Demonstrated mastery in performance optimization techniques, including lazy loading and code splitting, resulting in a 20% acceleration of client applications and a 15% boost in user retention rates.</p> <p class="mb-4 text-muted">Played a pivotal role within a cohesive team of 7 developers, collaboratively working in Agile environments. Achieved a 95% success rate in meeting project milestones, highlighting effective teamwork and project management skills.</p>`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Lead Full-stack Developer <br /> <span class="font-normal">Tomorrow Pictures, Inc, Atlanta, GA</span> <br /> <span class="text-sm font-normal">2013 - 2017</span>',
+        description: `<p class="mb-4 text-muted">Spearheaded a comprehensive overhaul and reconstruction of the company's primary Video-On-Demand (VOD) web application, replacing a legacy Ruby codebase with Angular, Node.js, and a headless CMS. This initiative resulted in substantial system performance improvements, bug reduction, and an enriched user experience </p> <p class="mb-4 text-muted">Directed the conception, execution, and upkeep of multiple high-performance, scalable web applications tailored for a diverse clientele, harnessing cutting-edge technologies such as Next.js, TypeScript, and Firebase. </p> <p class="mb-4 text-muted">Elevated user experiences and bolstered SEO performance across all client projects, ensuring superior outcomes for end-users and enhanced search engine rankings. </p> <p class="mb-4 text-muted">Pioneered and introduced pivotal product features for a multitude of progressive web apps, leading to the successful deployment of five client projects and delivering a unified, seamless user experience. <p/> <p class="mb-4 text-muted">Crafted efficient databases and fortified secure REST API endpoints with SQL for various client endeavors, significantly enhancing data integrity, execution speed, and overall system security. <p/> <p class="mb-4 text-muted">Revamped the aesthetics and usability of a heavily-trafficked, customer-facing web application for a key client, achieving an impressive 70% increase in user retention.</p>`,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Education"
+    items={[
+      {
+        title: `Self Taught Developer <br /> <span class="font-normal">World Wide Web</span> <br /> <span class="text-sm font-normal">2012 - Present</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Bachelor of Arts in Film, Video and Digital Media <br /> <span class="font-normal">Columbia College Chicago</span> <br /> <span class="text-sm font-normal">2004 - 2007</span>`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Skills"
+    subtitle="Highlighting the Skills That Fuel Digital Innovation in Web2 and Web3"
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Full-Stack Development',
+        description:
+          'Proficient in creating end-to-end web solutions, handling both front-end and back-end development tasks.',
+      },
+      {
+        title: 'Front-End Frameworks',
+        description:
+          'Proficient in modern front-end frameworks like React, Next.js, Svelte, SvelteKit, and Astro for dynamic web development.',
+      },
+      {
+        title: 'Back-End Proficiency',
+        description: 'Experienced in developing robust server-side solutions using Node.js, Express, and Rust.',
+      },
+      {
+        title: 'Database Management',
+        description: 'Knowledgeable in designing and optimizing SQL databases to store and retrieve data efficiently.',
+      },
+      {
+        title: 'REST APIs',
+        description:
+          'Experienced in building robust RESTful APIs to facilitate data communication between front-end and back-end systems.',
+      },
+      {
+        title: 'Blockchain Development',
+        description:
+          'Proficient in creating and optimizing secure smart contracts using Solidity for decentralized applications (dApps) on blockchain platforms.',
+      },
+      {
+        title: 'Web3 Integration',
+        description:
+          'Skilled at integrating blockchain technology and Web3 principles into web applications for enhanced functionality.',
+      },
+      {
+        title: 'Adaptability',
+        description:
+          'Quick to adapt to new technologies, tools, and emerging trends in the dynamic world of web development and blockchain.',
+      },
+      {
+        title: 'Attention to Detail',
+        description: 'Diligent in maintaining precision and code quality in all development work.',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="projects"
+    title="Showcasing the essential skills needed to build robust web applications"
+    subtitle="Embark on a development journey that transcends code, venturing into the boundless possibilities of Web and Blockchain innovation. Explore my portfolio, where my passion for technology and creativity converge to craft immersive digital experiences and pioneer the future of decentralized narratives."
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed a Solidity ERC20 staking contract designed for security and gas efficiency. The contract empowers users to stake tokens and earn rewards in the same native token. Implemented industry best practices to ensure the utmost security and efficiency, including rigorous testing, gas optimization, and adherence to the ERC20 standard.',
+      },
+      {
+        title: 'Role:',
+        description: `Led the development of the ERC20 staking contract, prioritizing security and gas efficiency. Employed industry best practices, conducted thorough testing, optimized gas consumption, and ensured compliance with the ERC20 standard, creating a robust and efficient staking solution.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/eth-diamond.png',
+      alt: 'Ethereum Logo',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Private Repo (Can show code if asked)',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        ERC20 Staking Contract: <br /><span class="text-2xl"
+          >Simple yet robust staking contract focused on security and efficiency</span
+        >
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed the "Anywhere Fitness" web app with Svelte, integrating Firebase Authentication for user access, FaunaDB for data storage using GraphQL, and Google\'s Location API for location-based features. The project utilized Tailwind CSS for a responsive UI.',
+      },
+      {
+        title: 'Role:',
+        description: `Led end-to-end development, covering Svelte front-end, Firebase Authentication, FaunaDB integration with GraphQL, Google Location API implementation, and responsive UI design using Tailwind CSS.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/anywherefitness.png',
+      alt: 'Anywhere Fitness Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://github.com/drejohnson/anywhere-fitness',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Anywhere Fitness: <br /><span class="text-2xl"
+          >Web app that allows user to find and join others on their fitness journey</span
+        >
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `Engineered an OpenAI-powered multi-choice quiz generator using Next.js, Tailwind CSS, and Framer Motion. This user-friendly tool allows customization of language, topic, difficulty, and question count. During the quiz generation process (20-30 seconds), an engaging loading screen displays live response streams and fun programming facts. The quiz itself offers multiple-choice questions with explanations, a progress bar, and an entertaining end screen featuring gifs, witty messages, and confetti for high scores. Plus, it boasts a 14-track Kahoot-style audio player to groove to during the quiz.`,
+      },
+      {
+        title: 'Role:',
+        description: ` Led the development of the quiz generator, leveraging Next.js, Tailwind CSS, and Framer Motion for a responsive and visually appealing interface. Implemented customizable quiz options, designed an engaging loading screen, and created a feature-rich quiz with entertaining elements. The highlight is the integrated Kahoot-style audio player, enhancing the overall user experience.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/quizard.png',
+      alt: 'Quizard Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://quizard-five.vercel.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Quizard: <br /><span class="text-2xl">Open AI powered quiz generator built with Next.js</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `Introducing the AI Keywords App, a sophisticated solution leveraging the OpenAI API's natural language processing capabilities to empower users with advanced keyword analysis and generation. This application is meticulously crafted using Next.js 13, the latest iteration of the React framework, and polished with TailwindCSS for a sleek and responsive design.`,
+      },
+      {
+        title: 'Role:',
+        description: ` Developed the AI Keywords Extractor App, orchestrating the integration of the OpenAI API to ensure precise and contextually relevant keyword generation. I designed a user-friendly interface using Next.js 13, optimizing performance and SEO-friendliness for an efficient web application.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/keywordextractor.png',
+      alt: 'Keyword Extractor App',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://openai-keyword-extractor.vercel.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        AI Keyword Extractor: <br /><span class="text-2xl"
+          >OpenAI backed keywords extractor, Next.js 13, TailwindCSS, OpenAI API</span
+        >
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `Created an interactive Tic-Tac-Toe web application using SvelteKit for the front-end, coupled with a robust minimax algorithm for the AI opponent. The project showcased expertise in front-end web development, user interface design, and algorithm integration. The game featured responsive design, real-time game state management, and an engaging user interface. Deployed the application to provide a seamless gaming experience to users.`,
+      },
+      {
+        title: 'Role:',
+        description: ` Led the development of the Tic-Tac-Toe web application, leveraging SvelteKit for a modern, responsive front-end. Integrated a sophisticated minimax algorithm to power the AI opponent, ensuring challenging gameplay. Managed game state, user interactions, and visual design, resulting in an immersive and enjoyable gaming experience. Deployed the application for widespread accessibility, showcasing skills in web development and user experience design.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/tictactoe.png',
+      alt: 'Keyword Extractor App',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://minimax-tictactoe.vercel.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Impossible Tic Tac Toe: <br /><span class="text-2xl"
+          >Tic-tac-toe but with an AI implemented with minimax algorithm and alpha-beta pruning, making it impossible to
+          beat. Buit with Sveltekit</span
+        >
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Let's build something awesome"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: 'mailto:dre@phreshr.com',
+      },
+    ]}
+  />
+</Layout>
